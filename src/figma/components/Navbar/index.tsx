@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { css } from "styled-components";
 import { Label2, Border2pxZircon } from "../../styledMixins";
 
-type MenuItem = "Home" | "About-Us" | "Features" | "Pricing" | "FAQ" | "Blog"
+import {MenuItem} from './menu'
 
 
 interface Props {

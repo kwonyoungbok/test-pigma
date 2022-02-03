@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Heading2, Label01, Label2, Body1 } from "../../styledMixins";
+import FooterNav from "../Navbar/footer-nav";
 
 
 function Footer(props) {
@@ -36,17 +37,7 @@ function Footer(props) {
           </FlexCol2>
         </ContactInfo>
       </OverlapGroup1>
-      <OverlapGroup className="overlap-group-2">
-        <Copyright2021Finsweetcom className="copyright-2021-finsweetcom">
-          {copyright2021FinsweetCom}
-        </Copyright2021Finsweetcom>
-        <Place className="place-1">Home</Place>
-        <AboutUs className="about-us-1">About us</AboutUs>
-        <Features className="features-1">Features</Features>
-        <Pricing className="pricing-2">Pricing</Pricing>
-        <FAQ className="faq-2">FAQ</FAQ>
-        <Blog className="blog-1">Blog</Blog>
-      </OverlapGroup>
+      <FooterNav />
     </Footer1>
   );
 }
@@ -126,7 +117,7 @@ const Content = styled.div`
 `;
 
 const WeAreAlwaysOpenT = styled.p`
-  ${Label2}
+  ${Label2};
   width: 399px;
   min-height: 56px;
   margin-bottom: 22px;
@@ -146,7 +137,7 @@ const FlexCol = styled.div`
 `;
 
 const LetsTalk = styled.div`
-  ${Heading2}
+  ${Heading2};
   min-height: 64px;
   font-weight: 600;
   color: var(--french-gray);
@@ -155,7 +146,7 @@ const LetsTalk = styled.div`
 `;
 
 const WeAreAlwaysOpenT1 = styled.p`
-  ${Body1}
+  ${Body1};
   width: 399px;
   min-height: 84px;
   margin-top: 14px;
@@ -201,7 +192,7 @@ const FlexCol1 = styled.div`
 `;
 
 const EmailMeAt = styled.div`
-  ${Label01}
+  ${Label01};
   min-height: 32px;
   font-weight: 500;
   color: var(--dark-blue);
@@ -210,7 +201,7 @@ const EmailMeAt = styled.div`
 `;
 
 const Contactwebsitecom = styled.div`
-  ${Body1}
+  ${Body1};
   min-height: 28px;
   margin-top: 1px;
   opacity: 0.8;
@@ -229,96 +220,38 @@ const FlexCol2 = styled.div`
   min-height: 61px;
 `;
 
-const OverlapGroup = styled.div`
-  ${Label2};
-  height: 92px;
-  display: flex;
-  padding: 0 159px;
-  justify-content: flex-end;
-  align-items: center;
-  min-width: 1600px;
-  background-color: var(--white);
-`;
-
-const Copyright2021Finsweetcom = styled.div`
-  min-height: 28px;
-  min-width: 238px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const Place = styled.div`
-  min-height: 28px;
-  margin-left: 570px;
-  min-width: 48px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const AboutUs = styled.div`
-  min-height: 28px;
-  margin-left: 32px;
-  min-width: 72px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const Features = styled.div`
-  min-height: 28px;
-  margin-left: 32px;
-  min-width: 70px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const Pricing = styled.div`
-  min-height: 28px;
-  margin-left: 32px;
-  min-width: 55px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const FAQ = styled.div`
-  min-height: 28px;
-  margin-left: 32px;
-  min-width: 32px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const Blog = styled.div`
-  min-height: 28px;
-  margin-left: 32px;
-  min-width: 36px;
-  font-weight: 500;
-  color: var(--dark-blue);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const Copyright2021Finsweetcom1 = styled.div`
-  .footer.footer-9 & {
-    min-width: 241px;
-  }
-`;
-
-const Place1 = styled.div`
-  .footer.footer-9 & {
-    margin-left: 567px;
-  }
-`;
+// const OverlapGroup = styled.div`
+//   ${Label2};
+//   height: 92px;
+//   display: flex;
+//   padding: 0 159px;
+//   justify-content: flex-end;
+//   align-items: center;
+//   min-width: 1600px;
+//   background-color: var(--white);
+// `;
+//
+// const Copyright2021Finsweetcom = styled.div`
+//   min-height: 28px;
+//   min-width: 238px;
+//   font-weight: 500;
+//   color: var(--dark-blue);
+//   line-height: 28px;
+//   white-space: nowrap;
+// `;
+//
+//
+//
+// const Copyright2021Finsweetcom1 = styled.div`
+//   .footer.footer-9 & {
+//     min-width: 241px;
+//   }
+// `;
+//
+// const Place1 = styled.div`
+//   .footer.footer-9 & {
+//     margin-left: 567px;
+//   }
+// `;
 
 export default Footer;
