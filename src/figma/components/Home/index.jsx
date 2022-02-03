@@ -109,24 +109,24 @@ function Home(props) {
     <div className="container-center-horizontal">
       <div className="home screen">
         <OverlapGroup7>
-          <Hero>
-            <HeroText>
-              <HeadlineBody>
-                <BuildingStellarWeb>{buildingStellarWeb1}</BuildingStellarWeb>
-                <NullamVitaePurusA>{nullamVitaePurusA}</NullamVitaePurusA>
-              </HeadlineBody>
-              <ButtonContainer>
-                <Button>
-                  <ViewOurWork>{viewOurWork1}</ViewOurWork>
-                </Button>
-                <TextButton>
-                  <ViewPricing>{viewPricing1}</ViewPricing>
-                  <Arrow1 src="/img/arrow-1-9@2x.svg" />
-                </TextButton>
-              </ButtonContainer>
-            </HeroText>
-            <Illustration src="/img/illustration@1x.svg" />
-          </Hero>
+          {/*<Hero>*/}
+          {/*  <HeroText>*/}
+          {/*    <HeadlineBody>*/}
+          {/*      <BuildingStellarWeb>{buildingStellarWeb1}</BuildingStellarWeb>*/}
+          {/*      <NullamVitaePurusA>{nullamVitaePurusA}</NullamVitaePurusA>*/}
+          {/*    </HeadlineBody>*/}
+          {/*    <ButtonContainer>*/}
+          {/*      <Button>*/}
+          {/*        <ViewOurWork>{viewOurWork1}</ViewOurWork>*/}
+          {/*      </Button>*/}
+          {/*      <TextButton>*/}
+          {/*        <ViewPricing>{viewPricing1}</ViewPricing>*/}
+          {/*        <Arrow1 src="/img/arrow-1-9@2x.svg" />*/}
+          {/*      </TextButton>*/}
+          {/*    </ButtonContainer>*/}
+          {/*  </HeroText>*/}
+          {/*  <Illustration src="/img/illustration@1x.svg" />*/}
+          {/*</Hero>*/}
           <HomeHero>
             <HeroText1>
               <HeadlineBody1>
@@ -147,6 +147,8 @@ function Home(props) {
           </HomeHero>
           <Navbar className={navbarProps.className} />
         </OverlapGroup7>
+
+
         <ThisIsHowItWork>
           <Heading>
             <HowWeWork>{howWeWork}</HowWeWork>
@@ -167,6 +169,8 @@ function Home(props) {
             </CardContainer1>
           </Cards>
         </ThisIsHowItWork>
+
+
         <OurWork>
           <Header>
             <ViewOurProjects>{viewOurProjects}</ViewOurProjects>
@@ -365,7 +369,7 @@ function Home(props) {
 }
 
 const OverlapGroup7 = styled.div`
-  ${ManropeSemiBoldMirage18px}
+  ${ManropeSemiBoldMirage18px};
   width: 1600px;
   height: 760px;
   position: relative;
@@ -401,7 +405,7 @@ const HeadlineBody = styled.div`
 `;
 
 const BuildingStellarWeb = styled.div`
-  ${Heading1}
+  ${Heading1};
   width: 582px;
   min-height: 196px;
   font-weight: 600;
@@ -410,7 +414,7 @@ const BuildingStellarWeb = styled.div`
 `;
 
 const NullamVitaePurusA = styled.p`
-  ${Label2}
+  ${Label2};
   width: 562px;
   min-height: 49px;
   margin-top: 21px;
@@ -427,7 +431,7 @@ const ButtonContainer = styled.div`
   min-width: 410px;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
   height: 57px;
   display: flex;
   padding: 0 56px;
@@ -435,6 +439,7 @@ const Button = styled.div`
   min-width: 230px;
   background-color: var(--goldenrod);
   border-radius: 41px;
+  cursor: pointer;
 `;
 
 const ViewOurWork = styled.div`
@@ -455,14 +460,16 @@ const TextButton = styled.div`
   min-width: 140px;
 `;
 
-const ViewPricing = styled.div`
-  ${Label2}
+const ViewPricing = styled.button`
+  ${Label2};
   width: 98px;
   min-height: 25px;
   font-weight: 500;
-  color: var(--white);
+  color: var(--french-gray);
+  
   line-height: 28px;
   white-space: nowrap;
+  cursor: pointer;
 `;
 
 const Arrow1 = styled.img`
@@ -508,22 +515,22 @@ const HeadlineBody1 = styled.div`
 `;
 
 const BuildingStellarWeb1 = styled.div`
-  ${Heading1}
+  ${Heading1};
   width: 582px;
   min-height: 222px;
   font-weight: 600;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 74px;
 `;
 
 const LoremIpsumDolorSi = styled.p`
-  ${Label2}
+  ${Label2};
   width: 562px;
   min-height: 56px;
   margin-top: 24px;
   opacity: 0.7;
   font-weight: 500;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 28px;
 `;
 
@@ -534,7 +541,9 @@ const ButtonContainer1 = styled.div`
   min-width: 410px;
 `;
 
-const Button1 = styled.div`
+const Button1 = styled.button`
+  font-size: 18px;
+  font-weight: 600;
   height: 64px;
   display: flex;
   padding: 0 56px;
@@ -542,6 +551,13 @@ const Button1 = styled.div`
   min-width: 230px;
   background-color: var(--goldenrod);
   border-radius: 41px;
+  
+  cursor: pointer;
+  &:active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+  }
 `;
 
 const ViewOurWork1 = styled.div`
@@ -561,11 +577,11 @@ const TextButton1 = styled.div`
 `;
 
 const ViewPricing1 = styled.div`
-  ${Label2}
+  ${Label2};
   min-height: 28px;
   min-width: 98px;
   font-weight: 500;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 28px;
   white-space: nowrap;
 `;
@@ -1473,7 +1489,7 @@ const SendInquiry = styled.div`
 `;
 
 const LoremIpsumDolorSi4 = styled.p`
-  ${Label2}
+  ${Label2};
   width: 432px;
   min-height: 56px;
   margin-top: 16px;
