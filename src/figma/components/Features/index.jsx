@@ -199,7 +199,7 @@ const AllTheFeaturesYouNeed = styled.div`
   width: 468px;
   min-height: 148px;
   font-weight: 600;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 74px;
 `;
 
@@ -210,7 +210,7 @@ const LoremIpsumDolorSi = styled.p`
   margin-top: 32px;
   opacity: 0.7;
   font-weight: 500;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 28px;
 `;
 
