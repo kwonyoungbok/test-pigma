@@ -5,13 +5,17 @@ import { Routes, Route } from "react-router-dom";
 import Pricing from "./pages/Pricing";
 import Home from './pages/Home'
 import Features from './pages/Features'
+import InputKit from "./pages/InputKit";
 
 function App() {
   return (
     <div className="App">
+        <InputKit />
 
-        <Home {...homeData} />
+        {/*<Home {...homeData} />*/}
+
         {/*<Features {...featuresData}/>*/}
+        {/*<Pricing {...pricingData} />*/}
 
         {/*<Pricing {...pricingData} />*/}
         {/*<Home {...homeData} />*/}
