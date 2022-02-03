@@ -2,10 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import { Heading2, Label01, Label2, Body1 } from "../../styledMixins";
 import FooterNav from "../Navbar/footer-nav";
+import {MenuItem} from '../Navbar/menu'
+import {SocialMediaKind} from './social-media'
 
 
-function Footer(props) {
-  const { copyright2021FinsweetCom, className } = props;
+export interface Props{
+  copyrightString?:string
+  className?:string
+  onClickSocialMedia?:(s:SocialMediaKind)=>void
+  onClickMenu?:(m:MenuItem)=>void
+}
+
+
+function Footer(props:Props) {
+  const { copyrightString, className } = props;
+  const onClickSocialMedia = React.useCallback((e,s:SocialMediaKind)=>{
+    e?.stopPropagation?.()
+    props.onClickSocialMedia?.(s)
+  },[])
 
   return (
     <Footer1 className={`footer ${className || ""}`}>
@@ -21,7 +35,13 @@ function Footer(props) {
                 We are always open to discuss your project, improve your online presence and help with your UX/UI design
                 challenges.
               </WeAreAlwaysOpenT1>
-              <SocialMediaIcon className="social-media-icon" src="/img/social-media-icon@2x.svg" />
+
+              <SocialMediaIconList>
+                <SocialMediaIcon src={'/img/github.svg'} onClick={(e)=>onClickSocialMedia(e,'git-hub')} />
+                <SocialMediaIcon src={'/img/twitter.svg'} onClick={(e)=>onClickSocialMedia(e,'twitter')} />
+              </SocialMediaIconList>
+
+              <SocialMediaIconOrigin className="social-media-icon" src="/img/social-media-icon@2x.svg" />
             </FlexCol>
           </Content>
           <Logo className="logo" src="/img/logo@2x.svg" />
@@ -37,7 +57,7 @@ function Footer(props) {
           </FlexCol2>
         </ContactInfo>
       </OverlapGroup1>
-      <FooterNav />
+      <FooterNav copyrightString={copyrightString} onClick={props.onClickMenu} />
     </Footer1>
   );
 }
@@ -158,11 +178,25 @@ const WeAreAlwaysOpenT1 = styled.p`
 `;
 
 const SocialMediaIcon = styled.img`
+  width: 24px;
+  height: 24px;
+  margin-top: 28px;
+  margin-left: 1px;
+  cursor: pointer;
+`;
+
+
+const SocialMediaIconOrigin = styled.img`
   width: 144px;
   height: 16px;
   margin-top: 28px;
   margin-left: 1px;
 `;
+
+const SocialMediaIconList = styled.div`
+  display: flex;
+  gap: 10px;
+`
 
 const Logo = styled.img`
   position: absolute;

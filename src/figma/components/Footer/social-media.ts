@@ -1,0 +1,1 @@
+export type SocialMediaKind = 'git-hub' | 'twitter'
