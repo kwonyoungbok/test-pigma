@@ -200,7 +200,6 @@ const ContactUsButton =  styled.button`
   border-radius: 41px;
   background-color:transparent;
   cursor: pointer;
-  
 
   &:active{
     box-shadow: 1px 1px 0 rgb(0,0,0,0.5); 

@@ -195,7 +195,7 @@ const HeaderLeft = styled.div`
 `;
 
 const AllTheFeaturesYouNeed = styled.div`
-  ${Heading1}
+  ${Heading1};
   width: 468px;
   min-height: 148px;
   font-weight: 600;
@@ -204,7 +204,7 @@ const AllTheFeaturesYouNeed = styled.div`
 `;
 
 const LoremIpsumDolorSi = styled.p`
-  ${Label2}
+  ${Label2};
   width: 562px;
   min-height: 56px;
   margin-top: 32px;
@@ -257,7 +257,7 @@ const Benefits = styled.div`
 `;
 
 const TheBenefitsOfWorkingWithOurTeam = styled.div`
-  ${Heading2}
+  ${Heading2};
   width: 630px;
   min-height: 128px;
   margin-right: 6px;
@@ -294,7 +294,7 @@ const Icon = styled.img`
 `;
 
 const CustomizeWithEase = styled.div`
-  ${Heading6}
+  ${Heading6};
   width: 315px;
   min-height: 36px;
   align-self: center;
@@ -307,7 +307,7 @@ const CustomizeWithEase = styled.div`
 `;
 
 const LoremIpsumDolorSi1 = styled.p`
-  ${Body1}
+  ${Body1};
   width: 324px;
   min-height: 112px;
   align-self: flex-end;
@@ -337,7 +337,7 @@ const Icon1 = styled.img`
 `;
 
 const PerfectlyResponsive = styled.div`
-  ${Heading6}
+  ${Heading6};
   width: 315px;
   min-height: 36px;
   align-self: center;
@@ -350,7 +350,7 @@ const PerfectlyResponsive = styled.div`
 `;
 
 const LoremIpsumDolorSi2 = styled.p`
-  ${Body1}
+  ${Body1};
   width: 325px;
   min-height: 112px;
   align-self: flex-end;
@@ -390,7 +390,7 @@ const PointText1 = styled.div`
 `;
 
 const FriendlySupport = styled.div`
-  ${Heading6}
+  ${Heading6};
   min-height: 36px;
   font-weight: 500;
   color: var(--dark-blue);
@@ -399,7 +399,7 @@ const FriendlySupport = styled.div`
 `;
 
 const LoremIpsumDolorSi3 = styled.p`
-  ${Body1}
+  ${Body1};
   width: 325px;
   min-height: 112px;
   margin-top: 12px;
@@ -439,7 +439,7 @@ const UseClientFirst = styled.div`
 `;
 
 const TopAgenciesAndFre = styled.div`
-  ${Heading3}
+  ${Heading3};
   width: 624px;
   min-height: 168px;
   margin-top: 16px;
@@ -449,7 +449,7 @@ const TopAgenciesAndFre = styled.div`
 `;
 
 const LoremIpsumDolorSi4 = styled.p`
-  ${Body1}
+  ${Body1};
   width: 622px;
   min-height: 84px;
   margin-top: 16px;
@@ -518,7 +518,7 @@ const HeaderRight1 = styled.div`
 `;
 
 const QuickDelivery = styled.div`
-  ${Label2}
+  ${Label2};
   min-height: 28px;
   margin-left: 2px;
   opacity: 0.87;
@@ -529,7 +529,7 @@ const QuickDelivery = styled.div`
 `;
 
 const Guranteed1WeekDel = styled.div`
-  ${Heading3}
+  ${Heading3};
   width: 624px;
   min-height: 112px;
   margin-top: 16px;
@@ -539,7 +539,7 @@ const Guranteed1WeekDel = styled.div`
 `;
 
 const LoremIpsumDolorSi5 = styled.p`
-  ${Body1}
+  ${Body1};
   width: 622px;
   min-height: 84px;
   margin-top: 16px;
@@ -585,7 +585,7 @@ const Line1 = styled.img`
 `;
 
 const FAQ3 = styled.div`
-  ${Heading6}
+  ${Heading6};
   height: 36px;
   margin-top: 31px;
   margin-right: -0.69px;

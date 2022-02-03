@@ -132,7 +132,7 @@ const WeAreAlwaysOpenT = styled.p`
   margin-bottom: 22px;
   opacity: 0.8;
   font-weight: 500;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 28px;
 `;
 
@@ -149,7 +149,7 @@ const LetsTalk = styled.div`
   ${Heading2}
   min-height: 64px;
   font-weight: 600;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 64px;
   white-space: nowrap;
 `;
@@ -162,7 +162,7 @@ const WeAreAlwaysOpenT1 = styled.p`
   margin-left: 1px;
   opacity: 0.8;
   font-weight: 400;
-  color: var(--grey);
+  color: var(--french-gray);
   line-height: 28px;
 `;
 
@@ -230,7 +230,7 @@ const FlexCol2 = styled.div`
 `;
 
 const OverlapGroup = styled.div`
-  ${Label2}
+  ${Label2};
   height: 92px;
   display: flex;
   padding: 0 159px;
