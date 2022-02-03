@@ -13,7 +13,9 @@ function Frame3(props) {
   );
 }
 
-const Button = styled.div`
+const Button = styled.button`
+  border: none;
+  cursor: pointer;
   height: 64px;
   margin-top: 39px;
   display: flex;
@@ -25,7 +27,7 @@ const Button = styled.div`
 `;
 
 const GetStarted = styled.div`
-  ${ManropeSemiBoldMirage18px}
+  ${ManropeSemiBoldMirage18px};
   min-height: 32px;
   min-width: 132px;
   letter-spacing: 0;

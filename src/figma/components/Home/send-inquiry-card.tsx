@@ -1,7 +1,14 @@
-import Frame3 from "../Frame3";
 import React from "react";
 import styled from "styled-components";
-import {Body1, Border15pxWhite, Heading1, Heading5, Label01, Label2} from "../../styledMixins";
+import {
+    Body1,
+    Border15pxWhite,
+    Heading1,
+    Heading5,
+    Label01,
+    Label2,
+    ManropeSemiBoldMirage18px
+} from "../../styledMixins";
 
 export interface Props{
 
@@ -31,19 +38,28 @@ function SendInquiryCard(props:Props){
             <SendInquiry>{sendInquiry}</SendInquiry>
             <LoremIpsumDolorSi4>{loremIpsumDolorSi5}</LoremIpsumDolorSi4>
             <OverlapGroup12>
-                <Rectangle1302></Rectangle1302>
-                <Rectangle1303></Rectangle1303>
-                <Rectangle1304></Rectangle1304>
-                <Group2399>
-                    <YourName>{yourName}</YourName>
-                    <Email>{email}</Email>
-                    <Email>{pasteYourFigmaDesignUrl}</Email>
-                </Group2399>
+                <Input type='text' placeholder={yourName} />
+                <Input type='email' placeholder={email} />
+                <Input type='url' placeholder={pasteYourFigmaDesignUrl} />
+
+                {/*<Rectangle1302></Rectangle1302>*/}
+                {/*<Rectangle1303></Rectangle1303>*/}
+                {/*<Rectangle1304></Rectangle1304>*/}
+                {/*<Group2399>*/}
+                {/*    <YourName>{yourName}</YourName>*/}
+                {/*    <Email>{email}</Email>*/}
+                {/*    <Email>{pasteYourFigmaDesignUrl}</Email>*/}
+                {/*</Group2399>*/}
             </OverlapGroup12>
-            <Frame3>Send an Inquiry</Frame3>
+
+            <Button>
+                <GetStarted> Send an Inquiry</GetStarted>
+            </Button>
+
             <OverlapGroup10>
-                <GetInTouchWithUs1>Get in touch with us</GetInTouchWithUs1>
-                <Arrow2 src="/img/arrow-2@2x.svg" />
+                    <GetInTouchWithUs1>Get in touch with us</GetInTouchWithUs1>
+
+                    <Arrow2 src="/img/arrow-2@2x.svg" />
             </OverlapGroup10>
         </OverlapGroup22>
 
@@ -132,6 +148,9 @@ const OverlapGroup12 = styled.div`
   width: 432px;
   height: 224px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 40px;
 `;
 
@@ -187,6 +206,18 @@ const YourName = styled.div`
   white-space: nowrap;
 `;
 
+const Input = styled.input`
+  ${Label01};
+  ${Border15pxWhite};
+  padding-left: 8px;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 432px;
+  height: 64px;
+  color: white;
+`
+
+
 const Email = styled.div`
   min-height: 28px;
   margin-top: 52px;
@@ -217,7 +248,11 @@ const Rectangle1304 = styled.div`
   border-radius: 8px;
 `;
 
-const OverlapGroup10 = styled.div`
+const OverlapGroup10 = styled.button`
+  background-color:transparent;
+  border: none;
+  display: flex;
+  cursor: pointer;
   width: 244px;
   height: 32px;
   position: relative;
@@ -226,7 +261,6 @@ const OverlapGroup10 = styled.div`
 
 const GetInTouchWithUs1 = styled.div`
   ${Label01};
-  position: absolute;
   width: 244px;
   top: 0;
   left: 0;
@@ -236,12 +270,42 @@ const GetInTouchWithUs1 = styled.div`
   white-space: nowrap;
 `;
 
-
 const Arrow2 = styled.img`
-  position: absolute;
   width: 25px;
   height: 11px;
-  top: 10px;
-  left: 190px;
+  margin-top: 10px;
+  //top: 0px;
+  //left: 190px;
 `;
+
+
+
+const Button = styled.button`
+  border: none;
+  cursor: pointer;
+  height: 64px;
+  margin-top: 39px;
+  display: flex;
+  padding: 0 150px;
+  align-items: center;
+  min-width: 432px;
+  background-color: var(--goldenrod);
+  border-radius: 41px;
+
+  &:active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+  }
+`;
+
+const GetStarted = styled.div`
+  ${ManropeSemiBoldMirage18px};
+  min-height: 32px;
+  min-width: 132px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+`;
+
 export default SendInquiryCard;
