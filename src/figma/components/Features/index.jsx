@@ -421,7 +421,8 @@ const HeaderLeft1 = styled.div`
 `;
 
 const UseClientFirst = styled.div`
-  ${Label01}
+  ${Label01};
+  position: relative;
   min-height: 32px;
   margin-left: 2px;
   opacity: 0.87;
