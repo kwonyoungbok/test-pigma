@@ -1,4 +1,7 @@
 import React from "react";
+import styled from "styled-components";
+
+
 import Navbar from "../Navbar";
 import Card2 from "../Card2";
 import ViewMoreButton from "../ViewMoreButton";
@@ -8,7 +11,7 @@ import FAQ2 from "../FAQ2";
 import Frame3 from "../Frame3";
 import BlogCard12 from "../BlogCard12";
 import Footer from "../Footer";
-import styled from "styled-components";
+import SendInquiryCard from "./send-inquiry-card";
 import {
   Heading2,
   Body1,
@@ -26,10 +29,10 @@ import "./Home.css";
 
 function Home(props) {
   const {
-    buildingStellarWeb1,
-    nullamVitaePurusA,
-    viewOurWork1,
-    viewPricing1,
+    // buildingStellarWeb1,
+    // nullamVitaePurusA,
+    // viewOurWork1,
+    // viewPricing1,
     buildingStellarWeb2,
     loremIpsumDolorSi1,
     viewOurWork2,
@@ -307,37 +310,11 @@ function Home(props) {
             </Qn4>
           </Question>
         </FAQ1>
+
         <ContactForm>
-          <OverlapGroupContainer3>
-            <OverlapGroup9>
-              <HttpswwwpexelscomphotowomanWritingO src={httpsWwwPexelsComPhotoWomanWritingO} />
-              <Background></Background>
-              <HeadingTwo>
-                <BuildingStellarWeb2>{buildingStellarWeb3}</BuildingStellarWeb2>
-                <LoremIpsumDolorSi3>{loremIpsumDolorSi4}</LoremIpsumDolorSi3>
-              </HeadingTwo>
-            </OverlapGroup9>
-            <OverlapGroup22>
-              <SendInquiry>{sendInquiry}</SendInquiry>
-              <LoremIpsumDolorSi4>{loremIpsumDolorSi5}</LoremIpsumDolorSi4>
-              <OverlapGroup12>
-                <Rectangle1302></Rectangle1302>
-                <Rectangle1303></Rectangle1303>
-                <Rectangle1304></Rectangle1304>
-                <Group2399>
-                  <YourName>{yourName}</YourName>
-                  <Email>{email}</Email>
-                  <Email>{pasteYourFigmaDesignUrl}</Email>
-                </Group2399>
-              </OverlapGroup12>
-              <Frame3>{frame3Props.children}</Frame3>
-              <OverlapGroup10>
-                <GetInTouchWithUs1>{getInTouchWithUs2}</GetInTouchWithUs1>
-                <Arrow2 src="/img/arrow-2@2x.svg" />
-              </OverlapGroup10>
-            </OverlapGroup22>
-          </OverlapGroupContainer3>
+         <SendInquiryCard/>
         </ContactForm>
+
         <Blog>
           <BlogContainer>
             <HowWeWork>{ourBlog}</HowWeWork>
@@ -356,6 +333,7 @@ function Home(props) {
               <Arrow11 src="/img/arrow-1-6@2x.svg" />
             </ReadmoreButton>
           </BlogCard2>
+
           <BlogCard12
             httpsWwwPexelsComPhotoArabicBusines={blogCard122Props.httpsWwwPexelsComPhotoArabicBusines}
             className={blogCard122Props.className}
@@ -375,115 +353,16 @@ const OverlapGroup7 = styled.div`
   position: relative;
 `;
 
-const Hero = styled.div`
-  position: absolute;
-  height: 760px;
-  top: 0;
-  left: 0;
-  display: flex;
-  padding: 194.4px 160px;
-  align-items: center;
-  min-width: 1600px;
-  background-color: var(--tint-blue);
-`;
 
-const HeroText = styled.div`
-  width: 582px;
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 366px;
-`;
 
-const HeadlineBody = styled.div`
-  width: 586px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 267px;
-`;
 
-const BuildingStellarWeb = styled.div`
-  ${Heading1};
-  width: 582px;
-  min-height: 196px;
-  font-weight: 600;
-  color: var(--white);
-  line-height: 74px;
-`;
 
-const NullamVitaePurusA = styled.p`
-  ${Label2};
-  width: 562px;
-  min-height: 49px;
-  margin-top: 21px;
-  opacity: 0.7;
-  font-weight: 500;
-  color: var(--white);
-  line-height: 28px;
-`;
-
-const ButtonContainer = styled.div`
-  margin-top: 42px;
-  display: flex;
-  align-items: center;
-  min-width: 410px;
-`;
-
-const Button = styled.button`
-  height: 57px;
-  display: flex;
-  padding: 0 56px;
-  align-items: flex-end;
-  min-width: 230px;
-  background-color: var(--goldenrod);
-  border-radius: 41px;
-  cursor: pointer;
-`;
-
-const ViewOurWork = styled.div`
-  min-height: 32px;
-  margin-bottom: -58.42px;
-  min-width: 118px;
-  letter-spacing: 0;
-  line-height: 32px;
-  white-space: nowrap;
-`;
-
-const TextButton = styled.div`
-  height: 25px;
-  margin-left: 40px;
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-  min-width: 140px;
-`;
-
-const ViewPricing = styled.button`
-  ${Label2};
-  width: 98px;
-  min-height: 25px;
-  font-weight: 500;
-  color: var(--french-gray);
-  
-  line-height: 28px;
-  white-space: nowrap;
-  cursor: pointer;
-`;
 
 const Arrow1 = styled.img`
   width: 25px;
   height: 11px;
   margin-left: 16px;
   margin-bottom: 0.95px;
-`;
-
-const Illustration = styled.img`
-  width: 638px;
-  height: 319px;
-  margin-left: 60px;
-  margin-bottom: 1.66px;
 `;
 
 const HomeHero = styled.div`
@@ -1402,188 +1281,6 @@ const ContactForm = styled.div`
   min-width: 1280px;
 `;
 
-const OverlapGroupContainer3 = styled.div`
-  width: 1280px;
-  height: 691px;
-  position: relative;
-`;
-
-const OverlapGroup9 = styled.div`
-  position: absolute;
-  width: 1280px;
-  height: 691px;
-  top: 0;
-  left: 0;
-`;
-
-const HttpswwwpexelscomphotowomanWritingO = styled.img`
-  position: absolute;
-  width: 656px;
-  height: 691px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-`;
-
-const Background = styled.div`
-  position: absolute;
-  width: 1280px;
-  height: 691px;
-  top: 0;
-  left: 0;
-  background-color: #1c1e5380;
-`;
-
-const HeadingTwo = styled.div`
-  position: absolute;
-  width: 468px;
-  top: 96px;
-  left: 96px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 334px;
-`;
-
-const BuildingStellarWeb2 = styled.div`
-  ${Heading1}
-  width: 464px;
-  min-height: 225px;
-  font-weight: 600;
-  color: var(--white);
-  line-height: 74px;
-`;
-
-const LoremIpsumDolorSi3 = styled.p`
-  ${Label2}
-  width: 464px;
-  min-height: 85px;
-  margin-top: 24px;
-  font-weight: 500;
-  color: var(--white);
-  line-height: 28px;
-`;
-
-const OverlapGroup22 = styled.div`
-  position: absolute;
-  width: 624px;
-  top: 0;
-  left: 656px;
-  display: flex;
-  flex-direction: column;
-  padding: 48px 0;
-  align-items: center;
-  min-height: 691px;
-  background-color: var(--tint-blue);
-`;
-
-const SendInquiry = styled.div`
-  ${Heading5}
-  width: 432px;
-  min-height: 48px;
-  margin-top: 48px;
-  font-weight: 500;
-  color: var(--white);
-  line-height: 48px;
-  white-space: nowrap;
-`;
-
-const LoremIpsumDolorSi4 = styled.p`
-  ${Label2};
-  width: 432px;
-  min-height: 56px;
-  margin-top: 16px;
-  font-weight: 500;
-  color: var(--grey);
-  line-height: 28px;
-`;
-
-const OverlapGroup12 = styled.div`
-  width: 432px;
-  height: 224px;
-  position: relative;
-  margin-top: 40px;
-`;
-
-const Rectangle1302 = styled.div`
-  ${Border15pxWhite}
-  position: absolute;
-  width: 432px;
-  height: 64px;
-  top: 0;
-  left: 0;
-  border-radius: 8px;
-`;
-
-const Rectangle1303 = styled.div`
-  ${Border15pxWhite}
-  position: absolute;
-  width: 432px;
-  height: 64px;
-  top: 80px;
-  left: 0;
-  border-radius: 8px;
-`;
-
-const Rectangle1304 = styled.div`
-  ${Border15pxWhite}
-  position: absolute;
-  width: 432px;
-  height: 64px;
-  top: 160px;
-  left: 0;
-  border-radius: 8px;
-`;
-
-const Group2399 = styled.div`
-  ${Body1}
-  position: absolute;
-  width: 235px;
-  top: 18px;
-  left: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 188px;
-`;
-
-const YourName = styled.div`
-  min-height: 28px;
-  opacity: 0.5;
-  font-weight: 400;
-  color: var(--grey);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const Email = styled.div`
-  min-height: 28px;
-  margin-top: 52px;
-  opacity: 0.5;
-  font-weight: 400;
-  color: var(--grey);
-  line-height: 28px;
-  white-space: nowrap;
-`;
-
-const OverlapGroup10 = styled.div`
-  width: 244px;
-  height: 32px;
-  position: relative;
-  margin-top: 28px;
-`;
-
-const GetInTouchWithUs1 = styled.div`
-  ${Label01}
-  position: absolute;
-  width: 244px;
-  top: 0;
-  left: 0;
-  font-weight: 500;
-  color: var(--white);
-  line-height: 32px;
-  white-space: nowrap;
-`;
 
 const Blog = styled.div`
   height: 737px;
