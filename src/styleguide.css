@@ -1,0 +1,31 @@
+:root {
+  --accent: #eef4f9;
+  --bastille: #1d212f;
+  --black: #000000;
+  --black-2: #0000001f;
+  --dark-blue: #282938;
+  --french-gray: #bbbbcb;
+  --goldenrod: #fbd980;
+  --goldenrod-2: #fcd9801a;
+  --grey: #f4f6fc;
+  --mirage: #1a1b2a;
+  --royal-blue: #2405f2;
+  --steel-gray: #232536;
+  --tint-blue: #1c1e53;
+  --white: #ffffff0d;
+  --yellow: #fcd980;
+  --zircon: #f4f6fc33;
+
+  --font-size-36px: 36px;
+  --font-size-l: 18px;
+  --font-size-m: 16px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 38px;
+  --font-size-xxxxl: 48px;
+  --font-size-xxxxxl: 54px;
+
+  --font-family-gilroy-bold: "Gilroy-Bold", Helvetica;
+  --font-family-manrope: "Manrope", Helvetica;
+  --font-family-poppins: "Poppins", Helvetica;
+}

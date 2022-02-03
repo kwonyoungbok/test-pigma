@@ -1,0 +1,10 @@
+.promotion {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1682px;
+  padding: 40px 0;
+  width: 1600px;
+}
+
