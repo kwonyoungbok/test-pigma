@@ -10,8 +10,9 @@ function App() {
   return (
     <div className="App">
 
-        {/*<Home {...homeData} />*/}
-        <Features {...featuresData}/>
+        <Home {...homeData} />
+        {/*<Features {...featuresData}/>*/}
+
         {/*<Pricing {...pricingData} />*/}
         {/*<Home {...homeData} />*/}
         {/*<Features {...featuresData}/>*/}

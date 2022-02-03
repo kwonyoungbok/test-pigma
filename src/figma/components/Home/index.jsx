@@ -244,10 +244,10 @@ function Home(props) {
           </FlexRow1>
         </Features>
         <Testimonials>
-          <Heading1>
+          <HeadingOne>
             <WhatOurClientsSayAboutUs>{whatOurClientsSayAboutUs}</WhatOurClientsSayAboutUs>
             <LoremIpsumDolorSi2>{loremIpsumDolorSi3}</LoremIpsumDolorSi2>
-          </Heading1>
+          </HeadingOne>
           <Content>
             <TheBestAgencyWe>{theBestAgencyWe}</TheBestAgencyWe>
             <FlexRow2>
@@ -308,10 +308,10 @@ function Home(props) {
             <OverlapGroup9>
               <HttpswwwpexelscomphotowomanWritingO src={httpsWwwPexelsComPhotoWomanWritingO} />
               <Background></Background>
-              <Heading2>
+              <HeadingTwo>
                 <BuildingStellarWeb2>{buildingStellarWeb3}</BuildingStellarWeb2>
                 <LoremIpsumDolorSi3>{loremIpsumDolorSi4}</LoremIpsumDolorSi3>
-              </Heading2>
+              </HeadingTwo>
             </OverlapGroup9>
             <OverlapGroup22>
               <SendInquiry>{sendInquiry}</SendInquiry>
@@ -1143,7 +1143,7 @@ const Testimonials = styled.div`
   background-color: #f4f6fc80;
 `;
 
-const Heading1 = styled.div`
+const HeadingOne = styled.div`
   width: 331px;
   margin-bottom: 62px;
   display: flex;
@@ -1418,7 +1418,7 @@ const Background = styled.div`
   background-color: #1c1e5380;
 `;
 
-const Heading2 = styled.div`
+const HeadingTwo = styled.div`
   position: absolute;
   width: 468px;
   top: 96px;
