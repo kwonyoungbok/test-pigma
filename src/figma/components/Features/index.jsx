@@ -214,7 +214,7 @@ const LoremIpsumDolorSi = styled.p`
   line-height: 28px;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
   height: 64px;
   margin-top: 32px;
   display: flex;
@@ -223,10 +223,16 @@ const Button = styled.div`
   min-width: 200px;
   background-color: var(--yellow);
   border-radius: 41px;
+  cursor: pointer;
+  &:active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+  }
 `;
 
 const ViewPricing = styled.div`
-  ${ManropeSemiBoldCharade18px}
+  ${ManropeSemiBoldCharade18px};
   min-height: 32px;
   min-width: 104px;
   letter-spacing: 0;
