@@ -2,21 +2,26 @@ import React , {useCallback} from "react";
 import styled from "styled-components";
 import { css } from "styled-components";
 import { Label2, Border2pxZircon } from "../../styledMixins";
-
+// @ts-ignore
+import { useNavigate } from 'react-router-dom';
 import {MenuItem} from './menu'
 
 
 interface Props {
     className?: string
     onClick?:(m:MenuItem)=>void
+    autoRoute?:boolean
 }
+
 
 function Navbar(props:Props) {
   const { className } = props;
+  const navigate = useNavigate();
 
   const onClick = useCallback((e:React.MouseEvent<HTMLElement>,m:MenuItem)=>{
       e.stopPropagation()
       props.onClick?.(m)
+      navigate("/"+ m)
   },[])
 
   return (
@@ -25,7 +30,7 @@ function Navbar(props:Props) {
                           src="/img/finsweet-white-logo-1@2x.svg"
       />
       <Place className="nav-place"
-             onClick={(e)=>onClick(e,'Home')}>
+             onClick={(e)=>onClick(e,'home')}>
           Home
       </Place>
       <AboutUs className="nav-about-us"
@@ -33,11 +38,11 @@ function Navbar(props:Props) {
           About us
       </AboutUs>
       <Features className="nav-features"
-                onClick={(e)=>onClick(e,'Features')}>
+                onClick={(e)=>onClick(e,'features')}>
           Features
       </Features>
       <Pricing className="nav-pricing"
-               onClick={(e)=>onClick(e,'Pricing')}>
+               onClick={(e)=>onClick(e,'pricing')}>
           Pricing
       </Pricing>
       <FAQ className="nav-faq"
@@ -45,7 +50,7 @@ function Navbar(props:Props) {
           FAQ
       </FAQ>
       <Blog className="nav-blog"
-            onClick={(e)=>onClick(e,'Blog')}>
+            onClick={(e)=>onClick(e,'blog')}>
           Blog
       </Blog>
         <ContactUsButton>

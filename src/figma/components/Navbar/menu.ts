@@ -1,2 +1,2 @@
-export type MenuItem = "Home" | "About-Us" | "Features" | "Pricing" | "FAQ" | "Blog"
+export type MenuItem = "home" | "About-Us" | "features" | "pricing" | "FAQ" | "blog"
 

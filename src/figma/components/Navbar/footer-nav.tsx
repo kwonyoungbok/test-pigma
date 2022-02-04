@@ -2,17 +2,21 @@ import styled, {css} from "styled-components";
 import React, {useCallback} from "react";
 import {Label2 } from "../../styledMixins";
 import {MenuItem} from '../Navbar/menu'
+import { useNavigate } from 'react-router-dom';
 
 export interface Props {
     copyrightString?: string
     onClick?:(m:MenuItem)=>void
+    autoRoute?:boolean
 }
 
 function FooterNav(props:Props){
+    const navigate = useNavigate();
     const copyrightString = props?.copyrightString ||  "Copyright 2021, Finsweet.com"
     const onClick = useCallback((e:React.MouseEvent<HTMLElement>,m:MenuItem)=>{
         e.stopPropagation()
         props.onClick?.(m)
+        navigate("/"+ m)
     },[])
     return (
         <OverlapGroup>
@@ -20,7 +24,7 @@ function FooterNav(props:Props){
                   {copyrightString}
               </Copyright2021Finsweetcom>
             <Place className="footer-place"
-                   onClick={(e)=>onClick(e,'Home')}>
+                   onClick={(e)=>onClick(e,'home')}>
                 Home
             </Place>
 
@@ -29,18 +33,18 @@ function FooterNav(props:Props){
                 About us
             </AboutUs>
             <Features className="footer-features"
-                      onClick={(e)=>onClick(e,'Features')}>
+                      onClick={(e)=>onClick(e,'features')}>
                 Features
             </Features>
             <Pricing className="footer-pricing"
-                     onClick={(e)=>onClick(e,'Pricing')}>
+                     onClick={(e)=>onClick(e,'pricing')}>
                 Pricing
             </Pricing>
             <FAQ className="footer-faq"
                  onClick={(e)=>onClick(e,'FAQ')}>
                 FAQ
             </FAQ>
-            <Blog className="footer-blog"  onClick={(e)=>onClick(e,'Blog')}>
+            <Blog className="footer-blog"  onClick={(e)=>onClick(e,'blog')}>
                 Blog
             </Blog>
         </OverlapGroup>

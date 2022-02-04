@@ -1,7 +1,7 @@
 import React from 'react'
 // @ts-ignore
-import { Routes, Route } from "react-router-dom";
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Pricing from "./pages/Pricing";
 import Home from './pages/Home'
 import Features from './pages/Features'
@@ -10,33 +10,15 @@ import InputKit from "./pages/InputKit";
 function App() {
   return (
     <div className="App">
-        {/*<Pricing {...pricingData} />*/}
-        {/*<InputKit />*/}
-
-        <Home {...homeData} />
-
-        {/*<Features {...featuresData}/>*/}
-
-
-        {/*<Pricing {...pricingData} />*/}
-        {/*<Home {...homeData} />*/}
-        {/*<Features {...featuresData}/>*/}
-        {/*<Pricing {...pricingData} />*/}
-
-        {/*<Routes>*/}
-        {/*    <Route path="/pricing">*/}
-        {/*        <Pricing {...pricingData} />*/}
-        {/*    </Route>*/}
-
-        {/*    <Route path="/home">*/}
-        {/*        <Home {...homeData} />*/}
-        {/*    </Route>*/}
-
-        {/*    /!*<Route path="/features">*!/*/}
-        {/*    /!*    <Features {...featuresData} />*!/*/}
-        {/*    /!*</Route>*!/*/}
-
-        {/*</Routes>*/}
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home {...homeData}/>} />
+                <Route path="/home" element={<Home {...homeData}/>} />
+                <Route path="/pricing" element={<Pricing {...pricingData}/>} />
+                <Route path="/features" element={<Features {...featuresData}/>} />
+                <Route path="/input-list" element={<InputKit />} />
+            </Routes>
+        </Router>
     </div>
   );
 }

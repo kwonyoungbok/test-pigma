@@ -8,8 +8,6 @@ import ViewMoreButton from "../ViewMoreButton";
 import FaqHeading from "../FaqHeading";
 import FAQ from "../FAQ";
 import FAQ2 from "../FAQ2";
-import Frame3 from "../Frame3";
-import BlogCard12 from "../BlogCard12";
 import Footer from "../Footer";
 import SendInquiryCard from "./send-inquiry-card";
 import {
@@ -353,9 +351,6 @@ const OverlapGroup7 = styled.div`
   height: 760px;
   position: relative;
 `;
-
-
-
 
 
 
