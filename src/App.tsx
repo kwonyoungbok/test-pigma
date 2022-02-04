@@ -10,10 +10,10 @@ import InputKit from "./pages/InputKit";
 function App() {
   return (
     <div className="App">
-        <Pricing {...pricingData} />
+        {/*<Pricing {...pricingData} />*/}
         {/*<InputKit />*/}
 
-        {/*<Home {...homeData} />*/}
+        <Home {...homeData} />
 
         {/*<Features {...featuresData}/>*/}
 
@@ -673,7 +673,7 @@ const homeData = {
     viewOurWork1: "View our work",
     viewPricing1: "View Pricing",
     buildingStellarWeb2: "Building stellar websites for early startups",
-    loremIpsumDolorSi1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    loremIpsumDolorSi1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
     viewOurWork2: "View our work",
     viewPricing2: "View Pricing",
     howWeWork: "How we work",

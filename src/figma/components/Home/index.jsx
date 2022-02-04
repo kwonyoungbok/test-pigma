@@ -315,31 +315,32 @@ function Home(props) {
          <SendInquiryCard/>
         </ContactForm>
 
-        <Blog>
-          <BlogContainer>
-            <HowWeWork>{ourBlog}</HowWeWork>
-            <BlogCard12
-              httpsWwwPexelsComPhotoArabicBusines={blogCard121Props.httpsWwwPexelsComPhotoArabicBusines}
-              viewMoreButtonProps={blogCard121Props.viewMoreButtonProps}
-            />
-          </BlogContainer>
-          <BlogCard2>
-            <HttpswwwpexelscomphotowomanInWhiteS src={httpsWwwPexelsComPhotoWomanInWhiteS} />
-            <Address>{address}</Address>
-            <HowOneWebflowUser>{howOneWebflowUser}</HowOneWebflowUser>
-            <SeeHowPivotingTo>{seeHowPivotingTo}</SeeHowPivotingTo>
-            <ReadmoreButton>
-              <ReadMore>{readMore}</ReadMore>
-              <Arrow11 src="/img/arrow-1-6@2x.svg" />
-            </ReadmoreButton>
-          </BlogCard2>
+        {/*<Blog>*/}
+        {/*  <BlogContainer>*/}
+        {/*    <HowWeWork>{ourBlog}</HowWeWork>*/}
+        {/*    <BlogCard12*/}
+        {/*      httpsWwwPexelsComPhotoArabicBusines={blogCard121Props.httpsWwwPexelsComPhotoArabicBusines}*/}
+        {/*      viewMoreButtonProps={blogCard121Props.viewMoreButtonProps}*/}
+        {/*    />*/}
+        {/*  </BlogContainer>*/}
+        {/*  <BlogCard2>*/}
+        {/*    <HttpswwwpexelscomphotowomanInWhiteS src={httpsWwwPexelsComPhotoWomanInWhiteS} />*/}
+        {/*    <Address>{address}</Address>*/}
+        {/*    <HowOneWebflowUser>{howOneWebflowUser}</HowOneWebflowUser>*/}
+        {/*    <SeeHowPivotingTo>{seeHowPivotingTo}</SeeHowPivotingTo>*/}
+        {/*    <ReadmoreButton>*/}
+        {/*      <ReadMore>{readMore}</ReadMore>*/}
+        {/*      <Arrow11 src="/img/arrow-1-6@2x.svg" />*/}
+        {/*    </ReadmoreButton>*/}
+        {/*  </BlogCard2>*/}
+        {/*  <BlogCard12*/}
+        {/*    httpsWwwPexelsComPhotoArabicBusines={blogCard122Props.httpsWwwPexelsComPhotoArabicBusines}*/}
+        {/*    className={blogCard122Props.className}*/}
+        {/*    viewMoreButtonProps={blogCard122Props.viewMoreButtonProps}*/}
+        {/*  />*/}
+        {/*</Blog>*/}
 
-          <BlogCard12
-            httpsWwwPexelsComPhotoArabicBusines={blogCard122Props.httpsWwwPexelsComPhotoArabicBusines}
-            className={blogCard122Props.className}
-            viewMoreButtonProps={blogCard122Props.viewMoreButtonProps}
-          />
-        </Blog>
+
         <Footer copyright2021FinsweetCom={footerProps.copyright2021FinsweetCom} className={footerProps.className} />
       </div>
     </div>

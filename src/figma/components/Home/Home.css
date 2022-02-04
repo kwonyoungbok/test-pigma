@@ -3,7 +3,7 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  height: 7068px;
+  /*height: 7068px;*/
   position: relative;
   width: 1600px;
 }

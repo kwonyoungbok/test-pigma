@@ -211,7 +211,7 @@ const PricingHeading = styled.div`
 `;
 
 const OurPricingPlans = styled.div`
-  ${Heading2}
+  ${Heading2};
   min-height: 64px;
   margin-right: 6px;
   min-width: 414px;
@@ -222,7 +222,7 @@ const OurPricingPlans = styled.div`
 `;
 
 const WhenYoureReadyTo = styled.p`
-  ${Label2}
+  ${Label2};
   width: 562px;
   min-height: 56px;
   margin-top: 16px;
@@ -417,7 +417,7 @@ const OverlapGroup4 = styled.div`
   min-height: 745px;
   background-color: var(--tint-blue);
   border-radius: 12px;
-  background-image: url(/img/mask-group@1x.svg);
+  background-image: url(/public/img/mask-group@1x.svg);
   background-size: 100% 100%;
 `;
 
@@ -430,17 +430,17 @@ const FlexRow1 = styled.div`
 `;
 
 const X201 = styled.div`
-  ${Heading3}
+  ${Heading3};
   width: 95px;
+  color: var(--french-gray);
   min-height: 56px;
   font-weight: 600;
-  color: var(--white);
   line-height: 56px;
   white-space: nowrap;
 `;
 
 const Month1 = styled.div`
-  ${Body1}
+  ${Body1};
   min-height: 28px;
   margin-left: 8px;
   min-width: 97px;
@@ -451,11 +451,11 @@ const Month1 = styled.div`
 `;
 
 const Starter1 = styled.div`
-  ${Heading6}
+  ${Heading6};
   min-height: 38px;
   margin-top: 20px;
   font-weight: 500;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 36px;
   white-space: nowrap;
 `;
@@ -467,7 +467,7 @@ const WhenYoureReadyTo2 = styled.p`
   margin-top: 8px;
   opacity: 0.7;
   font-weight: 500;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 28px;
 `;
 
@@ -483,7 +483,7 @@ const List1 = styled.div`
 const AllLimitedLinks3 = styled.div`
   min-height: 28px;
   font-weight: 400;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 28px;
   white-space: nowrap;
 `;
@@ -492,7 +492,7 @@ const AllLimitedLinks4 = styled.div`
   min-height: 28px;
   margin-top: 20px;
   font-weight: 400;
-  color: var(--white);
+  color: var(--french-gray);
   line-height: 28px;
   white-space: nowrap;
 `;
