@@ -10,12 +10,13 @@ import InputKit from "./pages/InputKit";
 function App() {
   return (
     <div className="App">
-        <InputKit />
+        <Pricing {...pricingData} />
+        {/*<InputKit />*/}
 
         {/*<Home {...homeData} />*/}
 
         {/*<Features {...featuresData}/>*/}
-        {/*<Pricing {...pricingData} />*/}
+
 
         {/*<Pricing {...pricingData} />*/}
         {/*<Home {...homeData} />*/}

@@ -13,7 +13,7 @@ function Qn2(props) {
         <WhatIsYourClassNamingConvention className="what-is-your-class-naming-convention">
           {whatIsYourClassNamingConvention}
         </WhatIsYourClassNamingConvention>
-        <X174548 className="x-1" src="/img/-@2x.svg" />
+        {/*<X174548 className="x-1" src="/img/-@2x.svg" />*/}
       </FlexRow>
       <Line43 className="line-43" src="/img/line-44@1x.svg" />
     </Qn21>
